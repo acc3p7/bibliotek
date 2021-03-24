@@ -11,10 +11,16 @@
 
 .nav-main{
     grid-area: 1 / 1 / 1 / span 8;
+    background-color: aqua;
 }
 
 .nav-login{
     grid-area: 1 / 9 / 1 / span 4;
+    background-color: brown;
+}
+
+.inline-block li{
+    display: inline-block;
 }
 
 .grid {
