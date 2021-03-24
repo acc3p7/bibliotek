@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+.nav-grid{
+    display: grid;
+    grid-template: 1 / repeat(12 1fr);
+}
+
+.nav-main{
+    grid-area: 1 / 1 / 1 / span 8;
+}
+
+.nav-login{
+    grid-area: 1 / 9 / 1 / span 4;
+}
 
 .grid {
     display: grid;
