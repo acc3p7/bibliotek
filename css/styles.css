@@ -4,18 +4,22 @@
     box-sizing: border-box;
 }
 
+/* Navigation */
 .nav-grid{
     display: grid;
-    grid-template: 1 / repeat(12 1fr);
+    grid-template: 1fr / repeat(12, 1fr);
+    height: 3em;
+    background-color: red;
+    
 }
 
 .nav-main{
-    grid-area: 1 / 1 / 1 / span 8;
+    grid-area: 1 / 4 / 1 / span 3;
     background-color: aqua;
 }
 
 .nav-login{
-    grid-area: 1 / 9 / 1 / span 4;
+    grid-area: 1 / 7 / 1 / span 3;
     background-color: brown;
 }
 
@@ -23,7 +27,45 @@
     display: inline-block;
 }
 
-.grid {
+
+/* Main */
+
+.main-grid {
     display: grid;
-    grid-template: repeat(6 1fr) / repeat(12 1fr);
+    width: 900px;
+    grid-template: repeat(30, 1fr) / repeat(12, 1fr);
+    margin: auto;
+    height: 3000px;
+    border: 2px blue solid;
+    background-color: yellowgreen;
+}
+
+.headLine {
+    grid-area: 1 / 1 / 4 / span 12;
+    overflow: hidden;
+    background-color: tomato;
+    background-size: cover;
+}
+
+.box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+  }
+
+img{
+    width: 100%;
+}
+
+.bibliotek {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.bibliotek h1 {
+    color: wheat;
+}
+
+.explain {
+    grid-area: 4 / 1 / 6 / 3;
 }
