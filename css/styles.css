@@ -68,4 +68,19 @@ img{
 
 .explain {
     grid-area: 4 / 1 / 6 / 3;
+    z-index: 2;
+}
+
+.threeColumns {
+    grid-area: 4 / 1 / 7 / 13;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.columnita {
+    width: 25%;
+    align-items: center;
+    
 }
