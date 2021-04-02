@@ -17,6 +17,7 @@
                 <li><a href="lecturas.html">Lecturas</a></li>
                 <li><a href="autores.html">Autores</a></li>
                 <li><a href="libros.html">Libros</a></li>
+                <li><a href="index2.html">Index2</a></li>
             </ul>
         </nav>
         <nav class="nav-login inline-block">
@@ -29,10 +30,16 @@
     <main >
         <div class="main-grid-lecturas">
             <div class="box top-lecturas">
-                <p>el documento no es muy claro de que tiene que haber aquí</p>
+                <nav class="nav-main inline-block">
+                    <ul>
+                        <li><a href="autores.html">Autores</a></li>
+                        <li><a href="libros.html">Libros</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="box middle-lecturas threeColumns">
-                <div class="middle-lecturas-col"> 
+                <div class="middle-lecturas-col">
+                     
                     <label for="titulo">Titulo:</label>
                     <input list="titulo" name="titulo" class="hideList">
                     <datalist id="titulo">
@@ -46,6 +53,9 @@
                         <option value="Los piratas Rodamons" />
                         <option value="El pollo Pepe" />
                     </datalist> <br>
+                    
+                </div>
+                <div class="middle-lecturas-col">
                     <label for="autor">Autor:</label>
                     <input list="autor" name="autor" class="hideList">
                     <datalist id="autor" class="hideList">
@@ -54,19 +64,48 @@
                         <option value="Jano García" />
                     </datalist>
                 </div>
-                <div class="middle-lecturas-col">
-                    <button>Nueva lectura</button>
-                </div>
-                <div class="middle-lecturas-col">
-                    <button>Informes</button>
+                <div class="middle-lecturas-col flexDerecha">
+                    <button class="derecha">Alta</button>
                 </div>
             </div>
             <div class="box bottom-lecturas">
-                <p>aqui va la info de lo solicitado</p>
+                <div class="lecturas-grid">
+                    <table class="tabla">
+                        <thead>
+                          <tr>
+                            <th>Lector</th>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Idioma</th>
+                            <th>Inicio</th>
+                            <th>Fin</th>
+                            <th>Opinión</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Carlos</td>
+                            <td>EL pollo Pepe</td>
+                            <td>Mike Farrel</td>
+                            <td>Español</td>
+                            <td>02/04/2021</td>
+                            <td>03/04/2021</td>
+                            <td>Esto es una opinión</td>
+                          </tr>
+                          <tr>
+                            <td>Carlos</td>
+                            <td>Gruas</td>
+                            <td>Arquitecto nombrebastantelargo</td>
+                            <td>Español</td>
+                            <td>02/04/2021</td>
+                            <td>03/04/2021</td>
+                            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quisquam rem quidem maxime. Earum accusamus aliquid ipsa aliquam! Dolores officia temporibus consequuntur autem accusantium. Inventore est pariatur expedita voluptatibus reiciendis.</td>
+                          </tr>
+                        </tbody>
+                        </table>
+
+                </div>
             </div>
-
-
-
         </div>
     </main>
     <footer></footer>
