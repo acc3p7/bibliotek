@@ -109,7 +109,7 @@ img{
 .main-grid-lecturas {
     display: grid;
     width: 75%;
-    grid-template: repeat(12, 1fr) / 50px 50px 1fr;
+    grid-template: 50px 50px 1fr / repeat(12, 1fr);
     margin: auto;
     border: 2px;
     background-color: yellowgreen;
@@ -127,6 +127,9 @@ img{
 
 .middle-lecturas-col {
     width: 33%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
