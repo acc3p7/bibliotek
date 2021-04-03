@@ -17,6 +17,7 @@
                 <li><a href="lecturas.html">Lecturas</a></li>
                 <li><a href="autores.html">Autores</a></li>
                 <li><a href="libros.html">Libros</a></li>
+                <li><a href="index2.html">Index2</a></li>
             </ul>
         </nav>
         <nav class="nav-login inline-block">
@@ -27,11 +28,70 @@
         </nav>
     </header>
     <main >
-        <div class="main-grid-autores">
-            
+        <div class="main-grid-lecturas">
+            <div class="box top-lecturas">
+                <nav class="nav-main inline-block">
+                    <ul>
+                        <li><a href="lecturas.html">Lecturas</a></li>
+                        <li><a href="libros.html">Libros</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box middle-lecturas threeColumns">
+                <div class="middle-lecturas-col">
+                    <label for="autor">Autor:</label>
+                    <input list="autor" name="autor" class="hideList">
+                    <datalist id="autor" class="hideList">
+                        <option value="Reverte" />
+                        <option value="Quintana" />
+                        <option value="Jano García" />
+                    </datalist>                    
+                </div>
+                <div class="middle-lecturas-col">
+                    
+                </div>
+                <div class="middle-lecturas-col flexDerecha">
+                    <button class="derecha">Informes</button>
+                </div>
+            </div>
+            <div class="box bottom-lecturas">
+                <div class="lecturas-grid">
+                    <table class="tabla">
+                        <thead>
+                          <tr>
+                            <th>Autor</th>
+                            <th>Foto</th>
+                            <th>País de nacimiento</th>
+                            <th>País de defunción</th>
+                            <th>Nacionalidad</th>
+                            <th>Corriente literaria</th>
+                            <th>Web</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Carlos</td>
+                                <td>Sin foto</td>
+                                <td>España</td>
+                                <td>Francia</td>
+                                <td>Narniana</td>
+                                <td>No lo se</td>
+                                <td><a href="index2.html">Web de Carlos</a></td>
+                            </tr>
+                            <tr>
+                                <td>Miguel</td>
+                                <td>Sin foto</td>
+                                <td>Argelia</td>
+                                <td>España</td>
+                                <td>Narniana mora</td>
+                                <td>No comete faltas de ortografía</td>
+                                <td><a href="index2.html">Web de Miguel</a></td>
+                            </tr>
+                        </tbody>
+                        </table>
 
-
-
+                </div>
+            </div>
         </div>
     </main>
     <footer></footer>
